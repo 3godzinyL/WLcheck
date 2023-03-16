@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nahok</title>
+	<style type="text/css">
+		body {
+			background-color: white;
+			color: black;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			height: 100%;
+		}
+		
+		h2 {
+			color: red;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+h3 {
+			color: red;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+                               h1{
+color: red;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+}
+	</style>
+	<script type="text/javascript">
+		window.onload = function() {
+			setInterval(function() {
+				var randomColor = Math.floor(Math.random()*16777215).toString(16);
+				document.body.style.backgroundColor = "#" + randomColor;
+			}, 40);
+			
+			for (var i = 0; i < 450; i++) {
+				var randomText = Math.random().toString(36).substring(2, 10);
+				var h2 = document.createElement("h2");
+				h2.innerHTML = randomText;
+ 
+				document.body.appendChild(h2);
+				
+				var randomX = Math.floor(Math.random() * window.innerWidth);
+				var randomY = Math.floor(Math.random() * window.innerHeight);
+				h2.style.left = randomX + "px";
+				h2.style.top = randomY + "px";
+			}
+		};
+<h1>zaq1@WSX</h1>
+<h3>idk123</h3>
+<h3>DESKTOP-PR5TTPS</h3>
+
+<h3></h3>
+	</script>
+</head>
+<body>
+</body>
+</html>
